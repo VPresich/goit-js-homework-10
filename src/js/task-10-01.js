@@ -1,1 +1,1 @@
-// import './task-10-01/....js';
+import './task-10-01/01-timer.js';

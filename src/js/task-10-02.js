@@ -1,1 +1,1 @@
-// import './task-10-02/....js';
+import './task-10-02/02-promise.js';
