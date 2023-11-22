@@ -1,0 +1,1 @@
+import './task-8-3/lightbox-buttons-handles.js';
