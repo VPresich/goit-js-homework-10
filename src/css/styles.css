@@ -5,11 +5,4 @@
 @import url('./base/container.css');
 @import url('./layout/header.css');
 @import url("./layout/home.css");
-
-@import url("./layout/gallery.css");
-@import url("./layout/modal-window.css");
-@import url("./layout/slider.css");
-@import url("./layout/basic-lightbox-window.css");
-
-@import url("./layout/feedback-form.css");
             

@@ -1,11 +1,11 @@
 {
-  "name": "va-goit-js-homework-09",
+  "name": "va-goit-js-homework-10",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/goit-js-homework-09/",
+    "build": "vite build --base=/goit-js-homework-10/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -15,8 +15,6 @@
   "author": "Valentyna Aleksandrova <valya.alexandrova.presich@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "basiclightbox": "^5.0.4",
-    "simplelightbox": "^2.14.2",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }

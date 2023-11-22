@@ -1,1 +1,0 @@
-import './task-9-1/simple-lightbox-handles.js';
