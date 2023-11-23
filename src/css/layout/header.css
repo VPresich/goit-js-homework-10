@@ -29,5 +29,5 @@
 
 .site-navigation-item-link:hover,
 .site-navigation-item-link:focus {
-  color: var(--button-color);
+  color: var(--menu-item-accent);
 }

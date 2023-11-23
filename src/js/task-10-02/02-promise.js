@@ -1,27 +1,28 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-import iconsUrl from '../../img/icons.svg';
-import iconUrl from '../../img/bi-x-octagon.svg';
+import icon1Url from '../../img/bi-x-octagon.svg';
+import icon2Url from '../../img/bi_check.svg';
 
 const formRef = document.querySelector('.form');
 console.log(formRef);
 
 formRef.addEventListener('submit', onSubmit);
 
-function onSubmit(event) {
+function onSubmit() {
   event.preventDefault();
 
   const stateValue = formRef.querySelector('input[name="state"]:checked').value;
+  const delay = formRef.delay.value;
 
   const promise = new Promise((fulfill, reject) => {
     setTimeout(() => {
       if (stateValue === 'fulfilled') {
-        fulfill(formRef.delay.value);
+        fulfill(delay);
       } else {
-        reject(formRef.delay.value);
+        reject(delay);
       }
-    }, formRef.delay.value);
+    }, delay);
   });
 
   promise.then(fulfill).catch(reject);
@@ -36,18 +37,9 @@ function fulfill(delay) {
     backgroundColor: '#82C43C',
     position: 'topRight',
     closeOnEscape: true,
-    close: true,
-    // icon: '<img src="${iconUrl}" style="width: 20px; height: 20px;" />',
-    // icon:
-    // `<svg
-    //     class="alert-close-icon"
-    //     width="20"
-    //     height="20">
-    //     <use href="${iconsUrl}#icon-bi_x-octagon"></use>
-    // </svg>`,
+    close: false,
     icon: 'Icomoon',
-    iconUrl: `${iconUrl}`,
-
+    iconUrl: `${icon2Url}`,
     iconColor: '#fafafb',
   });
 }
@@ -60,19 +52,9 @@ function reject(delay) {
     messageLineHeight: '1.5',
     backgroundColor: '#fc5a5a',
     position: 'topRight',
-    closeOnEscape: true,
-    close: true,
-    // icon: '<img src="${iconUrl}" style="width: 20px; height: 20px;" />',
-    // icon:
-    // `<svg
-    //     class="alert-close-icon"
-    //     width="20"
-    //     height="20">
-    //     <use href="${iconsUrl}#icon-bi_x-octagon"></use>
-    // </svg>`,
+    closeOnEscape: false,
     icon: 'Icomoon',
-    iconUrl: `${iconUrl}`,
-
+    iconUrl: `${icon1Url}`,
     iconColor: '#fafafb',
   });
 }

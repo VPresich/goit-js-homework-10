@@ -4,10 +4,9 @@
     padding: 24px;
     display: flex;
     flex-direction: column;
-    row-gap: 32px;
+    row-gap: 24px;
     background-color: var(--form-bgr-color);
-    border-radius: 4px;
-    margin-bottom: 24px;
+    border-radius: 4px;    
 }
 
 .form button {
@@ -46,7 +45,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-bottom: 16px;
+    margin-bottom: 6px;    
 }
 
 input[name='delay'] {
@@ -62,6 +61,7 @@ input[name='delay'] {
     padding-left: 16px;
     outline: none;
     color: var(--input-color);
+    border-radius: 4px;
     border: 1px solid var(--input-border-normal-color);
     transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -111,4 +111,11 @@ fieldset {
     display: flex;
     column-gap: 48px;
     outline: none;
+    border-radius: 4px;
+    border: 1px solid var(--input-border-normal-color);
+    transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+fieldset:hover{
+    border: 1px solid var(--input-border-hover-color);
 }
