@@ -81,6 +81,10 @@ button[data-start]:disabled {
   column-gap: 24px;
 }
 
+.timer-shift {
+  justify-content: flex-end;
+}
+
 .field {
   display: flex;
   flex-direction: column;

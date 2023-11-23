@@ -8,6 +8,7 @@ import iconUrl from '../../img/bi-x-octagon.svg';
 
 const refs = {
   days: document.querySelector('.value[data-days]'),
+  timer: document.querySelector('.timer'),
   hours: document.querySelector('.value[data-hours]'),
   minutes: document.querySelector('.value[data-minutes]'),
   seconds: document.querySelector('.value[data-seconds]'),
@@ -79,11 +80,15 @@ function updateTimer() {
 function insertDataToControls(dateObj) {
   if (dateObj) {
     const { days, hours, minutes, seconds } = dateObj;
+    if (String(days).length > 3) {
+      refs.timer.classList.add('timer-shift');
+    }
     refs.days.textContent = days;
     refs.hours.textContent = hours;
     refs.minutes.textContent = minutes;
     refs.seconds.textContent = seconds;
   } else {
+    refs.timer.classList.remove('timer-shift');
     refs.days.textContent = '00';
     refs.hours.textContent = '00';
     refs.minutes.textContent = '00';
