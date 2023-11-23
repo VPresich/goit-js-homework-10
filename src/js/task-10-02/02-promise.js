@@ -5,11 +5,12 @@ import icon1Url from '../../img/bi-x-octagon.svg';
 import icon2Url from '../../img/bi_check.svg';
 
 const formRef = document.querySelector('.form');
-console.log(formRef);
+const stateRadios = document.querySelectorAll('input[name="state"]');
+if (stateRadios.length > 0) stateRadios[0].checked = true;
 
 formRef.addEventListener('submit', onSubmit);
 
-function onSubmit() {
+function onSubmit(event) {
   event.preventDefault();
 
   const stateValue = formRef.querySelector('input[name="state"]:checked').value;

@@ -38,6 +38,7 @@
 .form button:disabled {
     background-color: var(--button-disable-bgr-color);
     color: var(--button-disable-color);
+    cursor: not-allowed;
 }
 
 .form label {  

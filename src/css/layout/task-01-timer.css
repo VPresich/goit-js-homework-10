@@ -37,6 +37,7 @@
 #datetime-picker:disabled {
     border: 1px solid var(--input-border-disable-color);
     color: var(--input-disable-color);
+    cursor: not-allowed;
 }
 
 #datetime-picker:focus {
@@ -72,6 +73,7 @@ button[data-start]:disabled,
 button[data-start]:disabled {
     background-color: var(--button-disable-bgr-color);
     color: var(--button-disable-color);
+    cursor: not-allowed;
 }
 
 .timer {
@@ -133,6 +135,7 @@ button[data-stop]:disabled,
 button[data-stop]:disabled {
     background-color: var(--button-disable-bgr-color);
     color: var(--button-disable-color);
+    cursor: not-allowed;
 }
 
 .flatpicker-months {
@@ -145,17 +148,8 @@ button[data-stop]:disabled {
 .flatpickr-weekdays {
     text-align: center;
     font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
+    font-size: 16px;   
     font-weight: 500;
-    line-height: 24px;
-    /* 150% */
+    line-height: 1.5;    
 }
 
-.alert-close-icon{
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: #fafafb;
-    stroke: #fafafb;
-}
