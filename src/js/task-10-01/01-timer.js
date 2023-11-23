@@ -69,9 +69,7 @@ function updateTimer() {
 
   const restTime = userSelectedDate - new Date();
   if (restTime <= 0) {
-    changeControlsStatus();
-    clearInterval(intervalId);
-    intervalId = null;
+    resetTimer();
     return;
   }
   const formattedValues = convertMs(restTime);
